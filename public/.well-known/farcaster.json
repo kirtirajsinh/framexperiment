@@ -1,0 +1,17 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjY4NjEsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHhBNTkzMUE3MjZDRUNjYTA1N0EzRkY0M0E4NDg4MzQ2NjI2MDQ3OEI0In0",
+    "payload": "eyJkb21haW4iOiJuZXh0LWZyYW1lcy52ZXJjZWwuYXBwIn0",
+    "signature": "MHhhODZkMzY3NzgyOWY0M2M2MjgwZjdhMmUwOTEzZGQ2OGZmNDIxMmZiOGYzYWE3NzY4NTM3OGI2N2JkMzJiNDYwMGFiMDhkZGJhZDgzMTFmYjA3MGFlMTU1MDllMjU4YjkxZjI0YzJkZWM2MjM0NDY1OGFjMDIyMmIyOTIzZWNlZTFj"
+  },
+  "frame": {
+    "version": "1",
+    "name": "Example Frame",
+    "iconUrl": "https://next-frames.vercel.app/icon.png",
+    "homeUrl": "https://next-frames.vercel.app",
+    "imageUrl": "https://next-frames.vercel.app/image.png",
+    "buttonTitle": "Check this out",
+    "splashImageUrl": "https://next-frames.vercel.app/splash.png",
+    "splashBackgroundColor": "#eeccff"
+}
+}
