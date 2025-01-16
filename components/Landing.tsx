@@ -12,7 +12,7 @@ const Landing = () => {
         <p>Your first step to learning frames</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-8 max-w-2xl">
+      <div className="grid grid-cols-2 gap-8 max-w-2xl space-x-4">
         {[
           { title: "Learn Basics", image: "/learnimage.png", link: "/learn" },
           {
@@ -20,7 +20,11 @@ const Landing = () => {
             image: "/examplesimage.png",
             link: "/awesome-frames",
           },
-          { title: "Build Projects", image: "/startimage.png", link: "/build" },
+          {
+            title: "Build Project (coming soon)",
+            image: "/startimage.png",
+            link: "/build",
+          },
           {
             title: "Docs",
             image: "/resourcesimage.png",

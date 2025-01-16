@@ -7,11 +7,11 @@
   "frame": {
     "version": "1",
     "name": "Example Frame",
-    "iconUrl": "https://next-frames.vercel.app/icon.png",
-    "homeUrl": "https://next-frames.vercel.app",
-    "imageUrl": "https://next-frames.vercel.app/image.png",
+    "iconUrl": "https://next-frame-psi.vercel.app/vercel.svg",
+    "homeUrl": "https://next-frame-psi.vercel.app/",
+    "imageUrl": "https://pub-b8acacbdf4c34874a29a2fdaab996f29.r2.dev/next-frames%20image.png",
     "buttonTitle": "Check this out",
-    "splashImageUrl": "https://next-frames.vercel.app/splash.png",
+    "splashImageUrl": "https://pub-b8acacbdf4c34874a29a2fdaab996f29.r2.dev/next-frames%20image.png",
     "splashBackgroundColor": "#eeccff"
 }
 }

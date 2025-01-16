@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     "fc:frame": JSON.stringify({
       version: "next",
       imageUrl:
-        "https://pub-b8acacbdf4c34874a29a2fdaab996f29.r2.dev/logo%20maybe.png",
+        "https://pub-b8acacbdf4c34874a29a2fdaab996f29.r2.dev/next-frames%20image.png",
       button: {
         title: "Next Frames v2",
         action: {
           type: "launch_frame",
           name: "Next Frames v2",
-          url: `https://next-frames.vercel.app/`,
+          url: `https://next-frame-psi.vercel.app/`,
           splashImageUrl:
             "https://pub-b8acacbdf4c34874a29a2fdaab996f29.r2.dev/logo%20maybe.png",
           splashBackgroundColor: "#131313",
