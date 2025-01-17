@@ -10,6 +10,8 @@ import DynamicImport from "./DynamicImport";
 import FrameInvocation from "./FrameInvocation";
 import ErrorHandling from "./ErrorHandling";
 import Testing from "./Testing";
+import Confetti from "react-confetti";
+import { useWindowSize } from "react-use";
 const topics = [
   {
     id: 1,
@@ -245,7 +247,11 @@ export default NgrokTesting;
 const LearnScreen = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [showCode, setShowCode] = useState(false);
+  const { width, height } = useWindowSize();
+
   const router = useRouter();
+
+  const isCompleted = currentStep === topics.length - 1;
 
   const goNext = () => {
     if (currentStep < topics.length - 1) {
@@ -268,6 +274,34 @@ const LearnScreen = () => {
         fontFamily: "Arial, sans-serif",
       }}
     >
+      {isCompleted && (
+        <>
+          <Confetti
+            width={width}
+            height={height}
+            recycle={false}
+            numberOfPieces={500}
+          />
+          <div
+            style={{
+              position: "fixed",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              backgroundColor: "rgba(255, 255, 255, 0.9)",
+              padding: "2rem",
+              borderRadius: "10px",
+              zIndex: 1000,
+              boxShadow: "0 0 20px rgba(0,0,0,0.2)",
+            }}
+          >
+            <h2 style={{ color: "#007bff", marginBottom: "1rem" }}>
+              🎉 Congratulations!
+            </h2>
+            <p className="text-black">You now know the basics of Frames v2!</p>
+          </div>
+        </>
+      )}
       {/* Progress Visualizer */}
       <div style={{ marginBottom: "20px" }}>
         <h1>
