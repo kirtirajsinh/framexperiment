@@ -40,7 +40,7 @@ export const metadata: Metadata = {
           name: "Next Frames v2",
           url: `https://next-frame-psi.vercel.app/`,
           splashImageUrl:
-            "https://pub-b8acacbdf4c34874a29a2fdaab996f29.r2.dev/logo%20maybe.png",
+            "https://pub-b8acacbdf4c34874a29a2fdaab996f29.r2.dev/next-frames%20image.png",
           splashBackgroundColor: "#131313",
         },
       },

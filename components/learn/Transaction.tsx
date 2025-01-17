@@ -1,8 +1,10 @@
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import React from "react";
-import { useSendTransaction } from "wagmi";
+import { useAccount, useSendTransaction } from "wagmi";
 
 const Transaction = () => {
   const { sendTransaction } = useSendTransaction();
+  const { isConnected } = useAccount();
 
   const sendDemoTransaction = () => {
     sendTransaction({
@@ -11,11 +13,24 @@ const Transaction = () => {
     });
   };
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center space-y-4">
       <h2>Send Transaction</h2>
-      <button onClick={sendDemoTransaction}>Send 0.01 ETH</button>
+      {isConnected ? (
+        <button
+          style={{
+            marginBottom: "20px",
+            border: "1px solid #ccc",
+            padding: "20px",
+            borderRadius: "10px",
+          }}
+          onClick={sendDemoTransaction}
+        >
+          Send 0.01 ETH
+        </button>
+      ) : (
+        <ConnectButton />
+      )}
     </div>
   );
 };
-
 export default Transaction;

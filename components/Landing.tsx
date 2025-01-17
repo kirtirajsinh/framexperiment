@@ -12,7 +12,7 @@ const Landing = () => {
         <p>Your first step to learning frames</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-8 max-w-2xl space-x-4">
+      <div className="grid grid-cols-2 gap-8  ">
         {[
           { title: "Learn Basics", image: "/learnimage.png", link: "/learn" },
           {
@@ -34,7 +34,7 @@ const Landing = () => {
           <div
             onClick={() => router.push(`${item.link}`)}
             key={index}
-            className="relative group cursor-pointer transition-all duration-300"
+            className="relative group cursor-pointer transition-all duration-300 "
           >
             <div className="relative w-[200px] h-[200px] overflow-hidden rounded-lg">
               <Image
